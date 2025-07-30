@@ -1,0 +1,107 @@
+.container {
+  max-width: 480px;
+  height: 40px;
+  flex: 1;
+  margin-inline-start: 16px;
+  margin-inline-end: 16px;
+  position: relative;
+}
+
+.searchInput {
+  width: 100%;
+  height: 40px;
+  background: var(--bg-neutral);
+  color: var(--text-primary);
+  padding-inline-start: 16px;
+  padding-inline-end: 16px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  z-index: 900;
+  position: relative;
+  transition: border-radius 0.36s ease, background-color 0.36s ease;
+}
+
+.container:hover .searchIcon {
+  color: var(--text-accent);
+}
+
+.form {
+  flex: 1;
+}
+
+.input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  outline: none;
+  font-size: 0.875rem;
+}
+
+.searchIcon {
+  color: var(--text-secondary);
+  transition: 0.36s ease;
+}
+
+.searchBox {
+  width: 100%;
+  position: absolute;
+  background: var(--bg-primary);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  box-shadow: 0px 0px 4px var(--bg-neutral);
+  z-index: -100;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.36s ease;
+}
+
+.visible {
+  z-index: 800;
+  visibility: visible;
+  opacity: 1;
+}
+
+.noContent {
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  color: var(--text-primary);
+  user-select: none;
+}
+.mostSearchedContainer {
+  padding: 0 16px 16px 16px;
+}
+.mostSearchedTitle {
+  margin: 16px 0;
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  line-height: 1.75;
+  font-weight: 400;
+  font-family: IRANSans, tahoma, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  user-select: none;
+}
+.mostSearchedTagsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.mostSearchedTag {
+  color: var(--text-secondary);
+  background-color: transparent;
+  border: 1px solid var(--bg-muted);
+  cursor: pointer;
+  border-radius: 16px;
+  font-size: 0.75rem;
+  height: 1.75rem;
+  padding: 0 12px;
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}

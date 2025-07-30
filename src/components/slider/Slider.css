@@ -1,0 +1,8 @@
+.emblaThumbs__slide__selected {
+  opacity: 1;
+}
+.emblaThumbs__image {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}

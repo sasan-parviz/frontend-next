@@ -1,0 +1,50 @@
+.app {
+  max-width: 1440px;
+  min-width: 1024px;
+  display: flex;
+  flex-direction: row-reverse;
+  margin: auto;
+  position: relative;
+}
+
+.main {
+  width: calc(100% - 300px);
+  min-height: calc(100% - 128px);
+  margin-right: 20px;
+  margin-top: 32px;
+  padding-inline-end: 16px;
+}
+
+.seoTitle {
+  display: block;
+  color: var(--text-secondary);
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  padding: 8px 0 16px 0;
+  text-align: end;
+}
+
+.mainContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 1365px) {
+  .mainContent {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.overlay {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: 0.36s ease;
+}

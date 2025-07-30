@@ -1,0 +1,140 @@
+.containerHighlight {
+  height: 40px;
+  padding-inline-start: 16px;
+  padding-inline-end: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: var(--text-secondary);
+  transition: 0.36s ease;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  font-size: 0.875rem;
+  line-height: 2;
+}
+
+.containerHighlight:hover {
+  color: var(--text-accent);
+  background-color: var(--bg-neutral);
+}
+
+.containerFilled {
+  height: 40px;
+  padding-inline-start: 16px;
+  padding-inline-end: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #ebebeb;
+  transition: 0.36s ease;
+  background-color: var(--text-accent);
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  font-size: 0.875rem;
+  line-height: 2;
+}
+.containerFilled:hover {
+  background-color: color-mix(in srgb, var(--text-accent) 80%, white);
+  color: #ffffff;
+}
+
+.containerBordered {
+  height: 40px;
+  padding-inline-start: 16px;
+  padding-inline-end: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: var(--text-secondary);
+  transition: 0.36s ease;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  font-size: 0.875rem;
+  line-height: 2;
+}
+.containerBordered:hover {
+  color: var(--text-primary);
+  background-color: var(--bg-neutral);
+}
+
+.containerTag {
+  height: 40px;
+  padding-inline-start: 8px;
+  padding-inline-end: 8px;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  color: var(--text-secondary);
+  background-color: var(--bg-neutral);
+  transition: 0.36s ease;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  font-size: 0.875rem;
+  line-height: 2;
+  margin: 4px;
+}
+
+.containerTag:hover {
+  color: var(--text-accent);
+  background-color: var(--bg-muted);
+}
+
+.bold {
+  font-weight: 500;
+}
+
+.buttonIcon {
+  margin-inline-end: 8px;
+  text-rendering: auto;
+  background-size: contain;
+  font-size: 1.25rem;
+  height: 20px;
+  line-height: 1;
+  vertical-align: middle;
+  width: 20px;
+}
+
+.buttonIconBig {
+  font-size: 20px;
+  width: 28px;
+  height: 20px;
+}
+
+.arrowDown {
+  padding-inline-start: 8px;
+  margin-inline-end: -4px;
+}
+
+.textSizeSmall {
+  font-size: 0.75rem;
+}
+
+.textSizeMedium {
+  font-size: 0.875rem;
+}
+
+.textSizeLarge {
+  font-size: 1rem;
+}
+
+.smallCircle {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.smallCircle:hover {
+  background-color: var(--bg-neutral);
+}
+.smallCircleIcon {
+  width: 20px;
+  height: 20px;
+  font-size: 1.25rem;
+}

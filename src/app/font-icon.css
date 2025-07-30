@@ -1,0 +1,135 @@
+@font-face {
+  font-family: "bazarekan";
+  src: url("/fonts/bazarekan.eot?60oq1q");
+  src: url("/fonts/bazarekan.eot?60oq1q#iefix") format("embedded-opentype"),
+    url("/fonts/bazarekan.ttf?60oq1q") format("truetype"),
+    url("/fonts/bazarekan.woff?60oq1q") format("woff"),
+    url("/fonts/bazarekan.svg?60oq1q#bazarekan") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "bazarekan" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-left:before {
+  content: "\e922";
+}
+.icon-arrow-right:before {
+  content: "\e923";
+}
+.icon-arrow-up-wide-short:before {
+  content: "\e910";
+}
+.icon-bookmark:before {
+  content: "\e911";
+}
+.icon-bookmark-solid:before {
+  content: "\e912";
+}
+.icon-hexagon-check:before {
+  content: "\e913";
+}
+.icon-hexagon-exclamation:before {
+  content: "\e914";
+}
+.icon-house:before {
+  content: "\e915";
+}
+.icon-house-solid:before {
+  content: "\e916";
+}
+.icon-instagram:before {
+  content: "\e917";
+}
+.icon-linkedin:before {
+  content: "\e918";
+}
+.icon-messages:before {
+  content: "\e919";
+}
+.icon-messages-solid:before {
+  content: "\e91a";
+}
+.icon-plus:before {
+  content: "\e91b";
+}
+.icon-plus-solid:before {
+  content: "\e91c";
+}
+.icon-share-nodes:before {
+  content: "\e91d";
+}
+.icon-triangle-exclamation:before {
+  content: "\e91e";
+}
+.icon-user-solid:before {
+  content: "\e91f";
+}
+.icon-x-twitter:before {
+  content: "\e920";
+}
+.icon-youtube:before {
+  content: "\e921";
+}
+.icon-magnifying-glass:before {
+  content: "\e90f";
+}
+.icon-briefcase:before {
+  content: "\e900";
+}
+.icon-car-bus:before {
+  content: "\e901";
+}
+.icon-chair-office:before {
+  content: "\e902";
+}
+.icon-dice:before {
+  content: "\e903";
+}
+.icon-hammer-brush:before {
+  content: "\e904";
+}
+.icon-house-building:before {
+  content: "\e905";
+}
+.icon-lamp:before {
+  content: "\e906";
+}
+.icon-laptop-mobile:before {
+  content: "\e907";
+}
+.icon-user-group:before {
+  content: "\e908";
+}
+.icon-watch:before {
+  content: "\e909";
+}
+.icon-chevron-down:before {
+  content: "\e90a";
+}
+.icon-comment-lines:before {
+  content: "\e90b";
+}
+.icon-life-ring:before {
+  content: "\e90c";
+}
+.icon-location-dot:before {
+  content: "\e90d";
+}
+.icon-user:before {
+  content: "\e90e";
+}
