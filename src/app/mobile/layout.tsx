@@ -1,19 +1,22 @@
 import type { Metadata } from "next";
 import "@/app/font-icon.css";
+import "./globals.css";
+import Header from "@/components/header";
 
 export const metadata: Metadata = {
   title: "Bazarekan",
   description: "Real Market with Real people",
 };
 
-export default function RootLayout({
+export default function MobileLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fa" dir="rtl">
-      <body>{children}</body>
-    </html>
+    <>
+      <Header isMobile={true} />
+      {children}
+    </>
   );
 }

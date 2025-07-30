@@ -1,0 +1,19 @@
+.header {
+  width: 100%;
+  padding: 5px;
+  padding: 7px;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--bg-muted);
+}
+
+.backButton {
+  margin-inline-end: 8px;
+}
+
+.searchContainer {
+  flex: 1;
+  height: 42px;
+  border: 1px solid red;
+  border-radius: 4px;
+}

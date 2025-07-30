@@ -1,0 +1,116 @@
+.container {
+  width: 100%;
+  border-bottom: 1px solid var(--bg-secondary);
+  user-select: none;
+}
+.filterHeader {
+  width: 100%;
+}
+.button {
+  width: 100%;
+  padding: 16px 0;
+  font-size: 1.24rem;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  cursor: pointer;
+  color: var(--text-primary);
+  outline: none;
+}
+
+.button > i {
+  margin-inline-start: 12px;
+  margin-inline-end: 8px;
+  color: #646464;
+  font-size: 0.75rem;
+  transition: 0.36s ease;
+  color: var(--text-primary);
+}
+
+.buttonArrowActive {
+  transform: rotateX(180deg);
+}
+
+.title {
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.content {
+  width: 100%;
+  max-height: 500px;
+  transition: max-height 0.36s ease-in;
+  overflow: hidden;
+  font-size: 0.875rem;
+}
+
+.height0 {
+  max-height: 0;
+  transition: max-height 0.36s ease-out;
+}
+
+.selectBox {
+  width: 100%;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+  background-color: var(--bg-neutral);
+  border-color: var(--bg-secondary);
+}
+
+.selectBoxTextActive {
+  color: var(--text-primary);
+}
+
+.selectBoxContent {
+  padding: 0px;
+  width: 250px;
+}
+
+.selectBoxContent svg:first-child {
+  margin-right: auto !important;
+  margin-inline-start: 8px !important;
+}
+.selectBoxItem:hover {
+  color: var(--text-primary) !important;
+  background: var(--bg-neutral) !important;
+}
+.selectBoxItem {
+  font-family: IRANSans, tahoma, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+
+  background: transparent !important;
+  color: var(--text-secondary) !important;
+  cursor: pointer;
+}
+
+.switchContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.switchPlaceholder {
+  font-size: 0.75rem;
+  color: var(--text-primary);
+}
+
+.commandContainer {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  border-color: var(--bg-neutral);
+}
+.commandListContainer {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+.switch[data-state="checked"] {
+  background-color: var(--text-accent) !important;
+}
+.switch {
+  background-color: var(--bg-secondary) !important;
+  outline: none !important;
+  border: none !important;
+}

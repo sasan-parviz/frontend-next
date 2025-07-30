@@ -1,0 +1,90 @@
+.embla {
+  position: relative;
+}
+.embla__viewport {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+  touch-action: pan-y pinch-zoom;
+}
+.embla__slide {
+  transform: translate3d(0, 0, 0);
+  flex: 0 0 100%;
+  min-width: 0;
+}
+.embla__slide__image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  user-select: none;
+  padding: 0 4px;
+}
+.emblaThumbs {
+  margin-top: 8px;
+}
+.emblaThumbs__viewport {
+  overflow: hidden;
+}
+.emblaThumbs__container {
+  display: flex;
+  flex-direction: row;
+}
+.emblaThumbs__slide {
+  flex: 0 0 22%;
+  min-width: 0;
+  padding: 0 4px;
+}
+@media (min-width: 576px) {
+  .emblaThumbs__slide {
+    flex: 0 0 15%;
+  }
+}
+.emblaThumbs__slide__number {
+  background-color: transparent;
+  touch-action: manipulation;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  user-select: none;
+  border-radius: 8px;
+  height: 64px;
+  opacity: 0.64;
+  overflow: hidden;
+}
+.embla__button__prev {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 100%;
+  position: absolute;
+  color: var(--text-neutral);
+  z-index: 9;
+  font-size: 32px;
+  right: 4px;
+  top: 0;
+}
+.embla__button__next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 100%;
+  position: absolute;
+  color: var(--text-neutral);
+  z-index: 9;
+  font-size: 32px;
+  left: 4px;
+  top: 0;
+}
+.embla__button__prev:hover,
+.embla__button__next:hover {
+  background: var(--bg-secondary);
+  transition: 0.2s ease;
+}
